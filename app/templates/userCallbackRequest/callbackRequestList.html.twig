@@ -1,0 +1,26 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+	<div class="body-table-content"> 
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>Country</td>
+				<td>Phone Number</td>
+				<td>International phone number</td>
+			</tr>
+			{% for request in requests %}
+				<tr>
+					<td>{{ request.id }}</td>
+					<td>{{ request.firstName }}</td>
+					<td>{{ request.lastName }}</td>
+					<td>{{ request.country }}</td>
+					<td>{{ request.phoneNumber }}</td>
+					<td>{{ request.internationalPhoneNumber }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Test technique</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/css.css') }}"/>
+  </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-content">
+                    <div class="header-box">
+                        <div class="logo-container">
+                            <img src="{{ asset('images/logo-stores-discount.svg') }}" alt="logo"/>
+                        </div>
+                    </div>
+                    <div class="header-box">
+                        <div class="btn-box">
+                            <button class="btn"><a class="link-btn" href="{{ path('create_callback_request') }}">/</a></button>
+                            </div>
+                            <div class="btn-box">
+                                <button class="btn"><a class="link-btn" href="{{ path('callback_request_list') }}">list</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    {% block body %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

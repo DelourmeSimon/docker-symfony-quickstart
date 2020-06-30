@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+	<div class="body-form-content">
+	    <script type="text/javascript" src="{{ asset('js/validator.js') }}"></script>
+		{{ form_start(callback_request_form, {'attr': {'id': 'callback_request_form'}}) }}
+			<div class="row">
+				<div class="mid-row">
+					{{ form_label(callback_request_form.firstName) }}
+				</div>
+				<div class="mid-row">
+					{{ form_label(callback_request_form.lastName) }}
+				</div>
+			</div>
+			<div class="row">
+				{{ form_widget(callback_request_form.firstName, {'attr': {'class': ''}}) }}
+				{{ form_widget(callback_request_form.lastName, {'attr': {'class': 'mid-row'}}) }}
+			</div>
+			<div class="row">
+				<div class="mid-row">
+					{{ form_errors(callback_request_form.firstName) }}
+				</div>
+				<div class="mid-row">
+					{{ form_errors(callback_request_form.lastName) }}
+				</div>
+			</div>
+			<div class="row">
+				{{ form_label(callback_request_form.country) }}
+			</div>
+			<div class="row">
+				{{ form_widget(callback_request_form.country, {'attr': {'class': 'full-row'}}) }}
+			</div>
+			<div class="row">
+				{{ form_label(callback_request_form.phoneNumber) }}
+			</div>
+			<div class="row">
+				{{ form_widget(callback_request_form.phoneNumber, {'attr': {'class': 'full-row'}}) }}
+			</div>
+			<div class="row">
+				{{ form_widget(callback_request_form.callMe, {'attr': {'class': 'btn call-me'}}) }}
+			</div>
+		{{ form_end(callback_request_form) }}
+	</div>
+{% endblock %}

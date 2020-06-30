@@ -1,0 +1,126 @@
+.container {
+	margin-left: 4%;
+    margin-right: 4%;
+    box-shadow: -1px 1px 6px 2px;
+    content: " ";
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    position: relative;
+    height: 80%;
+}
+
+body {
+	background: #aef0e6;
+}
+
+.header {
+	border-bottom: 1px solid black;
+	margin-bottom: 1%;
+	height: 150px;
+}
+
+.body {
+	border-bottom: 1px solid black;
+	margin-bottom: 10%;
+	height: 100%;
+	padding-bottom: 10%;
+}
+
+.header-content {
+	padding-left: 12%;
+	padding-top: 2%;
+	height: 100px;
+}
+
+.body-form-content {
+	margin-left: 30%;
+    margin-right: 30%;
+    border: solid 1px black;
+    padding: 1%;
+    padding-top: 3%;
+}
+
+.body-table-content {
+	margin-left: 30%;
+    margin-right: 30%;
+    padding: 1%;
+    padding-top: 3%;
+}
+
+.logo-container {
+	width: calc(100% - 80px);
+	max-height: 42.69px;
+}
+
+.header-box {
+	margin-left: 40px;
+	width: 29%;
+	display: inline-block;
+}
+
+.header-box .btn {
+	vertical-align: top;
+}
+
+.header-box img {
+	vertical-align: text-top;
+}
+
+.btn-box {
+	display: inline-block;
+	width: 40%;
+}
+
+.link-btn {
+	text-decoration: none;
+	color: white;
+}
+
+.btn {
+	border: none;
+	width: 100%;
+	background-color: #ed7941;
+	font-size: 34px;
+}
+
+.row {
+	display: block;
+	margin-bottom: 10px;
+}
+
+div:empty {
+	display: none;
+}
+
+.mid-row {
+	width: 40%;
+	display: inline-block;
+}
+
+.call-me {
+	width: 40%;
+	margin-top: 30px;
+	color: white;
+	border-radius: 10px;
+}
+
+.form-block {
+	display: inline-block;
+}
+
+.full-row {
+	width: 90%;
+	margin-right: 2%;
+}
+
+table {
+	display: inline-table;
+	border-collapse: collapse;
+}
+
+table tr td {
+	border: solid 1px black;
+	padding-right: 2px; 
+	padding-left: 2px; 
+}
